@@ -4,12 +4,17 @@
 
     <md-toolbar class="md-accent" md-elevation="3">
       <h3 class="md-title" style="flex: 1">Random Background Generator</h3>
-      <md-button>About Me</md-button>
-      <md-button class="md-primary">Source code</md-button>
+      <a href="https://github.com/BennaiNabil/random-background-generator"
+         target="_blank">
+        <md-button class="md-primary">Source code</md-button>
+      </a>
+      <a href="https://nabil-bennai-portfolio.web.app/" target="_blank">
+        <md-button>About Me</md-button>
+      </a>
     </md-toolbar>
 
     <div class="p-5">
-      <md-card class="text-center my-5 mx-auto p-5" md-with-hover v-bind:style="this.cardStyle">
+      <md-card class="text-center my-2 mx-auto p-5" md-with-hover v-bind:style="this.cardStyle">
         <md-card-header>
           <div class="md-title">
             Bored of this card's colour? Click below to change its background !
@@ -24,11 +29,15 @@
       </md-card>
     </div>
 
-    <div class="p-5">
-      <md-card class="text-center py-5" md-with-hover>
+    <div class="p-1">
+      <md-card class="text-center py-1" md-with-hover>
         <md-card-header>
           <div class="md-title">
-            {{ cardStyle.backgroundColor }}
+            <div>This is your color</div>
+            <md-button class="md-raised my-2" v-bind:style="this.cardStyle">
+              {{ this.cardStyle.backgroundColor }}
+            </md-button>
+            <div>I hope you like it 😋</div>
           </div>
         </md-card-header>
       </md-card>
