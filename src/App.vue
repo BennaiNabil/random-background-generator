@@ -29,8 +29,8 @@
       </md-card>
     </div>
 
-    <div class="p-1">
-      <md-card class="text-center py-1" md-with-hover>
+    <div class="p-5">
+      <md-card class="text-center px-5" md-with-hover>
         <md-card-header>
           <div class="md-title">
             <div>This is your color</div>
